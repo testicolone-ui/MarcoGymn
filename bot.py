@@ -14,23 +14,23 @@ logging.basicConfig(
 # --- COMANDI ---
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Ciao ?? Sono il GymResultBot!\n\n"
+        "Ciao 👋 Sono il GymResultBot!\n\n"
         "Inviami un comando come:\n"
         "/analizza <link_gara> <Nome Cognome>\n"
-        "E ti mostrer� i punteggi e i confronti ??"
+        "E ti mostrerò i punteggi e i confronti 🔍"
     )
 
 async def analizza(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if len(context.args) < 2:
         await update.message.reply_text(
-            "?? Uso corretto: /analizza <link_gara> <Nome Cognome>"
+            "⚠️ Uso corretto: /analizza <link_gara> <Nome Cognome>"
         )
         return
 
     link = context.args[0]
     nome = " ".join(context.args[1:])
     await update.message.reply_text(
-        f"Sto analizzando la gara per {nome}...\n?? {link}"
+        f"Sto analizzando la gara per {nome}...\n🔗 {link}"
     )
 
 # --- AVVIO BOT ---
@@ -41,5 +41,5 @@ def main():
     app.run_polling()
 
 if __name__ == "__main__":
-    print("?? Bot avviato... premi CTRL+C per fermarlo.")
+    print("🤖 Bot avviato... premi CTRL+C per fermarlo.")
     main()
