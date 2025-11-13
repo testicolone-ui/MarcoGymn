@@ -8,7 +8,7 @@ from scraper import get_gare_femminili, cerca_gara
 with open("config.json") as f:
     config = json.load(f)
 
-TOKEN = "INSERISCI_IL_TUO_TOKEN_TELEGRAM"  # <-- sostituisci con il tuo
+TOKEN = "8256160734:AAHCzKrDEbeV9wqV2KmWh8wNlIWgEzfFJ7c"  # <-- sostituisci con il tuo
 logging.basicConfig(level=logging.INFO)
 
 # === COMANDI TELEGRAM ===
