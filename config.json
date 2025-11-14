@@ -1,6 +1,6 @@
 {
-  categoria Silver,
-  disciplina Ginnastica Artistica Femminile,
-  atleta Nome Cognome,
-  aggiornamenti_automatici true
+  "categoria": "Silver",
+  "disciplina": "Ginnastica Artistica Femminile",
+  "atleta": "Nome Cognome",
+  "aggiornamenti_automatici": true
 }
